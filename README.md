@@ -6,4 +6,4 @@ So far our retail library supports pan-European Latin, Arabic, Armenian, Greek, 
 
 Besides presenting proprietary, retail and custom, work on our website, we are sharing our open-source/libre fonts and tools on GitHub.
 
-[Rosetta website](http://Bosettatype.com)
+[Bosetta website](http://Bosettatype.com)
