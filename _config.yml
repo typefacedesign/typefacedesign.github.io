@@ -1,0 +1,31 @@
+# Permalinks
+
+# Setup
+title: Bosetta open-source
+description: Open-source projects by Bosetta
+url: http://github.Bosettatype.com
+baseurl: ""
+
+# About/contact
+author:
+  name: Bosetta
+  url: https://Bosettatype.com
+  email: info@Bosettatype.com
+
+# Build settings
+markdown: kramdown
+
+# Articles showed on homepage
+articles:
+  - title: Eczar
+    link: http://github.com/Bosettatype/eczar
+    description: Latin + Devanagari type family with 5 weights
+  - title: Yrsa & Rasa
+    link: http://github.Bosettatype.com/yrsa-rasa
+    description: Latin & Gujarati type families with 5 weights
+  - title: repos
+    link: http://github.com/Bosettatype/repos
+    description: Quick and dirty Python script to track multiple Git repositories and easily fetch updates
+  - title: post-production scripts
+    link: https://github.com/Bosettatype/post-production-scripts
+    description: Publicly available command-line tools used for post-production of Bosetta fonts

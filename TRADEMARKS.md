@@ -1,0 +1,1 @@
+Bosetta is a trademark of Bosetta Type Foundry s.r.o.
