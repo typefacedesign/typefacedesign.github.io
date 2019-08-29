@@ -18,4 +18,4 @@ Besides presenting proprietary, retail and custom, work on our website, we are s
 [Our GitHub profile](http://github.com/shandontype){:.secondary}
 
 
-[Victor G](<a href="username.github.io/folder/document.pdf" target="_blank">PDF.</a>){:.primary}
+[Victor G](<a href="http://github.shandontype.com/docs/MATD01_VG_ProbDiacLo.pdf" target="_blank">Victor Italics.</a>){:.primary}
