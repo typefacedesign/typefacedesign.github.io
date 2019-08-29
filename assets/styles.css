@@ -28,7 +28,7 @@ body {
   height: 22px;
   text-indent: -2000px;
   overflow: hidden;
-  background: url('/assets/rosetta-logo.svg');
+  bac kground: url('/assets/rosetta-logo.svg');
   margin: 3px 0;
 }
 .navbar li {
