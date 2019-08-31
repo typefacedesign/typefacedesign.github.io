@@ -1,7 +1,141 @@
+
 <!DOCTYPE html>
 <html>
-  <body>
-    This is index.html
-    <a href="./another-page.html">goto another-page.html</a>
-  </body>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>
+      {% if page.title %}
+        {{ page.title }}
+      {% else %}
+        {{ site.title }}
+      {% endif %}
+    </title>
+
+    <meta name="description" content="{{ site.description }}">
+
+    <!-- CSS (from shandontype.github.io) -->
+    <link rel="stylesheet" href="http://github.shandontype.com/assets/styles.css">
+
+</head>
+
+<body>
+  <div class='navbar fixed'>
+     <div class='container'>
+        <a href='#' class='pull-left logo'>Texts on Type</a>
+        <ul class='pull-right'>
+           <li><a href='{{ site.github.repository_url }}'>GitHub</a></li>
+           <li><a href='https://twitter.com/home'>Twitter</a></li>
+           <li><a href='https://medium.com/@gerryleonidas/writing-for-design-students-part-1-a-pattern-for-structured-writing-687c7a985342'></a>Tips</li>
+        </ul>
+     </div>
+  </div>
+
+
+
+  <div class="container">
+    <div class="grid">
+      <div class="row">
+        <div class="span twelve">
+          <h1 id="texts-on-type-homepage">Texts on Type.</h1>
+
+<p>This project aims to publish selected dissertations from the Masters Typeface Design course from Reading University’s department of typography and graphic communication. The aim of it is to get the research out to the wider typographic community.</p>
+
+<p>[Victor Gaultney](<a href="http://github.shandontype.com/docs/MATD01_VG_ProbDiacLo.pdf" target="_blank">Victor Italics.</a>){:.primary}</p>
+
+
+
+
+
+
+</div>
+</div>
+
+	<div class="divider"></div>
+	<div class="row">
+	
+	
+		
+		<div class="span six">
+			<h3>Tiii and its typographical implementation</h3>
+			<p>Type design for typewriters: Olivetti</p>
+			<a class="secondary" href="_layouts/v1.html">Victor</a>
+		</div>
+	
+	
+		
+		<div class="span six">
+			<h3>The design and spread of Froben’s early Italics</h3>
+			<p>Khmer Printing Types and the Introduction of Print in Cambodia: 1877–1977</p>
+			<a class="secondary" href="./v1.html">Victor</a>
+		</div>
+		
+	</div>
+	<div class="divider"></div>
+	<div class="row">
+		
+	
+		
+		<div class="span six">
+			<h3>Devanagari in multi-script typography</h3>
+			<p>Problems of diacritic design for Latin text faces</p>
+			<a class="secondary" href="./another-page.html">Another</a>
+		</div>		
+	
+		
+		<div class="span six">
+			<h3>Three typefaces for mathematics</h3>
+			<p>The Ethiopic writing system: a typographic approach</p>
+			<a class="secondary" href="#">Read more</a>
+		</div>
+		
+	
+
+	</div>
+<div><!-- needs to be here for the templates to nest properly -->
+
+        </div>
+      </div>
+
+      
+
+      <div class="divider"></div>
+
+      <div class="row">
+        <div class="span twelve">
+          <a class="secondary" href="../">Back</a>
+        </div>
+      </div>
+
+      
+
+      <div class="divider"></div>
+
+      <div class="row">
+        <div class="span ten gray">Kindly supported by Google</div>
+      </div>
+    </div>
+  </div>
+    
+</body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
