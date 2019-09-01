@@ -1,4 +1,4 @@
-/* Source Sans fonts (incl. italics) */
+/* Source Serif fonts (incl. italics) */
 
 @import url(http://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700,400italic,700italic);
 
@@ -28,7 +28,6 @@ body {
   height: 22px;
   text-indent: -2000px;
   overflow: hidden;
-  background: url('/assets/rosetta-logo.svg');
   margin: 3px 0;
 }
 .navbar li {
@@ -78,22 +77,22 @@ p a {
   padding: 7px 20px;
   font-size: 14px;
   color: #FFF;
-  background: #C70028;
+  background: #f56942;
 }
 .primary {
-  background: #C70028;
+  background: #f56942;
 }
 .primary:hover {
   color: #FFF;
   background: #DC3140;
 }
 .secondary {
-  background: #24678A;
+  background: #f55742;
   color: #FFF;
 }
 .secondary:hover {
   color: #FFF;
-  background: #2A779F;
+  background: #f55742;
 } 
 .full {
   width: 1000px;
