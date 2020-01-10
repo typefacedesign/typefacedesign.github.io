@@ -1,0 +1,622 @@
+
+/*
+**  Colophon
+**  Design/Build:Shandon Type
+
+** IBM Plex published by Google Fonts and designed by Mike Abbink / Bold Monday. 
+** https://fonts.google.com/?query=plex
+
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'IBM Plex Serif',serif;
+    font-family: 'IBM Plex Mono', monospace;
+
+**  01. Resets
+**  02. Defaults
+**  03. Fonts
+**  04. Typography
+**  05. Grids
+**  06. Menus & Lists
+**  07. Forms & Tables
+**  08. Template Specific Styles
+**  09. CSS Animations
+*/
+/*
+**
+****  01. Resets
+**
+*/
+
+
+
+/***********************************************
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'IBM Plex Serif', serif;
+    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+***********************************************/
+
+
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+
+@font-face {
+      font-family: 'fontello';
+      src: url('./font/fontello.eot?37818078');
+      src: url('./font/fontello.eot?37818078#iefix') format('embedded-opentype'),
+           url('./font/fontello.woff?37818078') format('woff'),
+           url('./font/fontello.ttf?37818078') format('truetype'),
+           url('./font/fontello.svg?37818078#fontello') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+
+a {
+	font-size:1em;
+	text-decoration:none;
+	color:#ff3300;
+	font-family: 'IBM Plex Mono', sans-serif;	
+	font-weight: 500;
+}
+
+.container a {
+	color:#000000;
+}
+
+
+a:hover {
+	color:#000000;
+	text-decoration: underline;
+}
+
+button a:hover {
+	color:#E02DDE;
+	text-decoration: none;
+}
+
+* {
+	margin:0;
+	padding:0;
+ }
+.container {
+	width:1000px;
+	margin:0 auto;
+        	bor der: thin solid #E65C5F;
+
+}
+.pull-left {
+	float:left;
+}
+.pull-right {
+	float:right; margin-top: 19px;
+}
+.divider{
+    width:100%;
+    background:#CCC;
+    height:1px;
+    margin:25px 0;
+    clear:both;
+      }
+
+.line{
+	 width:100%;
+    height:1px;
+    margin:25px 0;
+    clear:both;
+	border-top: 1px solid #333333; 
+}
+
+.silencer{
+    width:100%;
+    height:1px;
+    margin:25px 0;
+    clear:both;
+      }
+
+.row {
+	min-height:2em;
+	line-height:2em;
+	width:100%
+}
+.span {
+	float:left;
+	display:inline;
+	min-height:1em;
+	margin:0;
+}
+.span:first-child {
+	margin-left:0
+}
+.span:last-child {
+	margin-right:0
+}
+.one {
+	width:8%; margin, padding: 0;
+}
+.two {
+	width:16%; margin, padding: 0;
+}
+.three {
+	width:24%; margin, padding: 0;
+}
+.four {
+	width:32%; margin, padding: 0;
+}
+.five {
+	width:40%; margin, padding: 0;
+}
+.six {
+	bor der: thin solid #8B9BB9;
+	width:41%; margin, padding: 0;
+	padding: 10px 65px 30px 0;
+	position: relative;
+	min-height: 300px;
+
+}
+
+.seven {
+	width:56%; margin, padding: 0;
+}
+.eight {
+	width:64%; margin, padding: 0;
+}
+.nine {
+	width:72%; margin, padding: 0;
+		padding: 60px 0 0 0;}
+
+}
+.ten {
+	width:80%; margin, padding: 0;
+}
+.eleven {
+	width:88%; margin, padding: 0;
+}
+.twelve {
+	width:100%; margin, padding: 0;
+}
+.container:after {
+	content:"\0020";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+.row:before,.row:after {
+	content:'\0020';
+	display:block;
+	overflow:hidden;
+	visibility:hidden;
+	width:0;
+	height:0
+}
+.row:after {
+	clear:both
+}
+.row {
+	zoom:1
+}
+
+/**************** TYPOGRAPHY ***************/	
+	
+h1  {
+    font-family: 'IBM Plex Serif', serif;
+	font-style: ita  lic;
+	font-size: 2.2em;
+	line-height: 48px;
+	font-weight: 700;
+}
+
+h2  {
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-style: normal;
+	font-size: 1.6em;
+	line-height: 36px;
+	font-weight: 400;
+}
+
+h3  {
+	font-family: 'IBM Plex Serif', sans-serif;
+	font-size: 1.6em;
+	line-he ight: 30px;
+	font-weight: 700;
+	margin-bottom: 1em;
+}
+
+h4  {
+    font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 1.6em;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+p1  {
+	font-family: 'IBM Plex Mono', sans-serif;
+	font-style: normal;
+	font-size: 1em;
+	letter-spacing: .12rem;
+   	font-variant: small-caps;
+	line-height: 1.8em;
+	font-weight: 500;
+}
+	 
+p2  {
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-style: normal;
+	font-size: 1em;
+	line-height: 1.4em;
+	font-weight: 400;
+}	
+
+li {font-family: 'IBM Plex mono', sans-serif;
+	font-style: normal;
+	font-size: .9em;
+	line-height: 1.5em;
+	font-weight: 400;
+	list-style:none;
+	text-in dent: 1rem;
+}
+	 
+p3  {
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-style: normal;
+	font-size: 1em;
+	line-height: 1.4em;
+	font-weight: 900;
+}
+p4{	font-family: 'IBM Plex Mono', sans-serif;
+	font-style: normal;
+	font-size: .85em;
+	line-height: 1.4em;
+	font-weight: 500;}
+
+p6  {
+
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    font -size: 1.6em;
+    color: #3C3B3B;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    padding-bott om: .5em;
+    text-align: center;
+    /* opacity: .8; */
+     
+      /* For safety - reset parent styles, that can break glyph codes*/
+      font-variant: normal;
+      text-transform: none;
+     
+      /* fix buttons height, for twitter bootstrap */
+      line-height: 1em;
+   
+      /* Animation center compensation - margins should be symmetric */
+      /* remove if not needed */
+      margin-left: .2em;
+     
+      /* You can be more comfortable with increased icons size */
+       font-size: 120%; 
+     
+      /* Font smoothing. That was taken from TWBS */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+     
+      /* Uncomment for 3D effect */
+      /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+::selection {
+	color: #ff3300; /* Safari */
+	}
+	 
+::-moz-selection {
+	color: #ff3300; /* Firefox */
+}
+
+.table {
+	width:100%;
+	border-spacing:0;
+	border-collapse:collapse;
+	text-align:left
+}
+.table th,.table td {
+	border-bottom:2px #d1d1d1 solid;
+	padding:8px 12px
+}
+.table td {
+	border-bottom:1px #d4d4d4 solid
+}
+.table.table-striped tbody tr:nth-child(2n+1) {
+	background-color:#f3f3f3
+}
+.table.table-bordered {
+	border:1px #CCC solid
+}
+.table.table-bordered td,.table.table-bordered th {
+	border:1px #CCC solid
+}
+.button {
+	border:0;
+	bord er-radius:4px;
+	outline:0;
+	cursor:pointer;
+}
+.button.small {
+	padding:7px 20px;
+	font-size:.95em;
+	margin-top: 1.6em;
+}
+.button.large {
+	padding:15px 45px;
+	font-size:1.1em
+}
+
+
+.button.primary {
+	colo r:white;
+	background: white;
+	border: 2px solid #ff3300;
+	font-family: 'IBM Plex Mono';	
+	font-weight: 500;
+	bottom: 10px;
+	position: absolute;
+
+}
+
+.button.primary:hover {
+	background-col or: black;
+	border: 2px solid #000000;
+	font-family: 'IBM Plex Mono';	
+	font-weight: 500;
+
+}
+
+.button.primary small:hover {
+	background-color: black;
+	border: 2px solid #ff3300;
+    color:red;
+	
+	
+}
+
+.secondary a base {
+	color:#000000;
+    text-decoration: underline; 
+		    position: absolute;
+	    bottom: 0;
+
+
+		
+	
+}
+
+.secondary a:hover {
+	color:#000000;
+	text-decoration: underline;
+	
+	
+}
+
+.button.success {
+	color:#FFF;
+	background:#4daf7c
+}
+.button.success:hover {
+	background:#48a474
+    color:#000000;
+}
+.button.danger {
+	color:#FFF;
+	background:#e6623c
+}
+.button.danger:hover {
+	background:#e4572e
+}
+
+/*fixie nav*/	
+ 
+.navbar {
+	background:#FFF;
+	padding:10px;
+	margin-bottom:10px;
+	border-bottom:2px #ff3300 solid;
+	height:50px
+}
+.navbar h4 {
+	color:#191919;
+	font-weight:200
+}
+.navbar li {
+	display:inline-block;
+	padding:.3em 15px 0 0
+}
+.navbar li:last-child {
+	padding-right:0
+}
+.navbar.fixed {
+	position: relative;
+	left:0;
+	right:0;
+	top:0
+}
+/*tidy up*/	  
+		  
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+	
+	background:#FFF;
+	padding:10px;
+	margin-bottom:10px;
+	border-bottom:2px #ff3300 solid;
+	height:50px
+}
+
+.n avbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav bar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #4CAF50;
+  color: pink;
+}
+
+.navbar .icon {
+  display: none;
+}	  
+
+/*footer*/	
+
+.footer{
+    background:#333333;
+	padding:10px;
+	margin-top:10px;
+	height:150px;
+    color:aliceblue;
+	list-style-type: none;
+}
+
+.footer a {color: aliceblue;}
+
+/*FADER*/
+
+
+.fade {
+   opacity: 1;
+   transition: opacity .10s ease-in-out;
+   -moz-transition: opacity .10s ease-in-out;
+   -webkit-transition: opacity .10s ease-in-out;
+   }
+
+.fade:hover {
+      opacity: 0;
+      }
+	  
+.linkfade {
+	opacity: 1;
+   transition: opacity .10s ease-in-out;
+   -moz-transition: opacity .10s ease-in-out;
+   -webkit-transition: opacity .10s ease-in-out;
+   }
+
+.linkfade:hover {
+      opacity: 0.5;
+      }
+
+
+/*FADER*/
+
+
+
+
+.alert {
+	padding:15px;
+	margin:10px 0;
+	border-radius:3px
+}
+.alert.primary {
+	background:#e8eff3;
+	border:1px #c5d7e3 solid
+}
+.alert.success {
+	background:#daeee4;
+	border:1px #b6dfca solid
+}
+.alert.danger {
+	background:#fdf4f1;
+	border:1px #f7cfc4 solid
+}
+@media only screen and (min-width:768px) and (max-width:999px) {
+	.container {
+		width:768px
+	}
+}
+@media only screen and (max-width:767px) {
+	.container {
+		width:300px
+	}
+	.container .table {
+		width:100%;
+		display:block;
+		overflow:auto;
+	}
+}
+@media only screen and (min-width:480px) and (max-width:767px) {
+	.container {
+		width:420px;
+	}
+	.container .table {
+		display: table
+	}
+	
+	.six {
+	bor der: thin solid #8B9BB9;
+	width:100%; margin, padding: 0;
+ }
+	
+	.nine {
+	bord er: thin solid #8B9BB9;
+	width:100%; margin, padding: 0;
+		font-size: 87%;
+
+	}
+	 
+
+	.navbar {
+	background:#FFF;
+	padding:10px;
+	margin-bottom:10px;
+	border-bottom:2px #ff3300 solid;
+	height:50px
+}
+.navbar h4 {
+	color:#191919;
+	font-weight:200;
+
+}
+.navbar li {
+	display:inline-block;
+	padding:.3em 15px 0 0;
+					border:1px #CCC solid;
+
+}
+.navbar li:last-child {
+	padding-right:0;
+					border:1px #CCC solid;
+
+}
+.navbar.fixed {
+	position: relative;
+	left:0;
+	right:0;
+	top:0
+}
+	
+
+.pull-right {
+	float:right; 
+	margin-t op: 19px;
+}		
+	
+	
+	
+	
+	
+}
