@@ -1,5 +1,6 @@
-# Texts on Type,
+# Texts on Type
 
-This project aims to publish selected dissertations from the Masters Typeface Design course from Reading University&rsquo;s department of typography and graphic communication. The aim of it is to get the research out to the wider typographic community. 
+[Live Website](https://typefacedesign.github.io)
 
-[Github](https://github.com/ShandonType/shandontype.github.io)
+Selected dissertations from the Masters Typeface Design (MATD) course, from the Department of Typography and Graphic Communication at The University of Reading, UK.
+The aim is to get more type design research out to the wider community.
