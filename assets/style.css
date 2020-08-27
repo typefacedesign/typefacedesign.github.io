@@ -451,7 +451,7 @@ text-decoration: underline;
 display: none;
 }
  /*footer*/	.footer {
-background:#1B4755;
+background:#333333;
 padding: 10px;
 margin-top: 10px;
 height: 150px;
@@ -459,7 +459,7 @@ color: aliceblue;
 list-style-type: none;
 }
 .footer a {
-color: white;
+color: white !important;
 }
 /*FADER*/
 .fade {
