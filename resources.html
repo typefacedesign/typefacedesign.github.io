@@ -4,6 +4,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|IBM+Plex+Serif:400,400i&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans|IBM+Plex+Serif:400,700&display=swap" rel="stylesheet">
+    
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
         
 <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans+Condensed:400,700|IBM+Plex+Sans:300,500,600,700|IBM+Plex+Serif:400,500,600,700&display=swap" rel="stylesheet">
 
@@ -15,7 +17,7 @@
 	  
 	  <style type='text/css'>
       body{
-        margin-t op:60px;
+        mar gin-top:60px;
       }
       .light{
         background:#CCC;'
@@ -48,8 +50,6 @@
       button{
       	margin-bottom:10px;
       }
-          
-        
     </style>
      
   </head>
@@ -66,34 +66,78 @@
     </div>
 	   
 		<div class="container">
-					<div class='silencer'></div>
-
-					<div class='silencer'></div>
-
-        	<div class="span eight">
-				<h5>Why and how to draw
-a bold typeface to
-accompany a regular
-</h5>
-				<h4>Lewis McGuffie</h4>
+            
+		<div class="span nine">
+			<h5>Resources</h5>
+            
+            <!--
+            <a class="secondary" class="transition" href="index.html">
+                <button class='button primary small'>
+                    <div class="link">Featured</div>
+                </button>
+            </a>
+            -->
+			
+                 
+            
 		</div> 
-		<div class='silencer'></div>
- 		<div id="pdfContainer">
-    				
-                <div class="silencer"></div>
-                
-                <object data="http://github.shandontype.com/docs/MATD18-19McguffieLewis.pdf" type="application/pdf" width="1000" height="1200">
-    <embed src="http://github.shandontype.com/docs/MATD01_VG_ProbDiacLo.pdf" width="1000px" height="1200px" />
-        <p>This browser does not support PDFs. Please download the PDF to view it: 
-        <a href="http://github.shandontype.com/docs/MATD01_VG_ProbDiacLo.pdf">Download PDF</a>.</p>
-    </embed></object>
+			
+            <div class='fat'></div>
+ 
+             <div class="span eight">
+			<h4>Referencing guides, articles, and further reading</h4>
+                 
+		</div>
+        <div class="span two">
+			
+			
+			
+		</div>
+        <div class="span two"><Br>
+			<P4>2020</P4>
+			
+		</div>
+			
+			            <div class='silencer'></div>
+
+            <div class='divider'></div>
             
-            
-				</div>
-            
-            
-<div class='divider'></div>
-</div><!--/container-->
+         <div class="span six">
+		<li>Definition of scope</li><li>
+Well defined and clearly stated objectives might include what will not be covered for either practical reasons or need to limit scope</li><li>
+Restatement of aims/objectives in abstract, introduction and conclusion</li><li>
+Answering the question</li><li>
+Explanation of title making sure title is an accurate reflection of content of dissertation</li><li>
+Choice of terminology explained definition of terms</li><li>
+Good, detailed investigative research</li><li>
+Introduction of a theory to prove or disprove</li><li>
+Evidence to back up well-constructed arguments</li><li>
+Clear contextualization which is selective (identifying relevant context)</li><li>
+Inclusion of personal/own views as well as citing literature</li><li>
+			 </div>
+			 
+			 <div class="span six">
+<li>Inclusion of interviews</li><li>
+Substantial conclusion</li><li>
+Description of research methods</li><li>
+Clarity of ideas (apparent through language and content)</li><li>
+Make abstract the essence of dissertation</li><li>
+A precise, concise and clear summary of the work</li><li>
+Introduction sets the scene</li><li>
+Possibly a combination of theory and history</li><li>
+Inclusion of primary data</li><li>
+Obvious enthusiasm for the subject</li><li>
+Originality</li><li>
+Creation of original archive</li><li>
+Descriptive and cautious</li>
+                 
+           
+		</div>
+            <div class='divider'></div>
+
+        				
+			
+	</div><!--/container-->
 	  	  
     <div class='footer'>
     	<div class='container'>
@@ -115,9 +159,34 @@ accompany a regular
                     <li><a href='#'>Authors</a></li>
                     <li><a href="index.html" class="transition"><div class="link">Resources</div></li></a> 
 					<li><a href='#'>Social</a></li>
+
+            </a>      
             </div>	  
       </div>
      
     </div><!--/footer-->
+        
+        
+         
+<script type="text/javascript">
+$(document).ready(function() {
+    $("body").css("display", "none");
+ 
+    $("body").fadeIn(300);
+ 
+    $("a.transition").click(function(event){
+        event.preventDefault();
+        linkLocation = this.href;
+        $("body").fadeOut(300, redirectPage);      
+    });
+         
+    function redirectPage() {
+        window.location = linkLocation;
+    }
+});
+</script>
+        
+        
+        
   </body>
 </html>
