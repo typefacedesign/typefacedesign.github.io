@@ -1,7 +1,7 @@
-/*** Colophon** 
-Design/Build: Shandon Type** 
-IBM Plex published by Google Fonts and designed by Mike Abbink / Bold Monday. 
-** https: //fonts.google.com/?query=plex 
+/*** Colophon**
+Design/Build: Shandon Type**
+IBM Plex published by Google Fonts and designed by Mike Abbink / Bold Monday.
+** https: //fonts.google.com/?query=plex
 font-family: 'IBM Plex Sans',sans-serif;
 font-family: 'IBM Plex Serif',serif;
 font-family: 'IBM Plex Mono',monospace;
@@ -32,12 +32,12 @@ font-family: 'IBM Plex Mono',monospace;
 	font-style: normal;
 }
 
-
 .container {
 	width: 1000px;
 	margin: 0 auto;
-	bord er: thin solid #E65C5F;
-		background-color: #ffffff;
+	bor der: thin solid #ffff00;
+	background-color: #ffffff;
+
 	padding: 0 30px 0 30px;
 
 }
@@ -46,7 +46,7 @@ font-family: 'IBM Plex Mono',monospace;
 }
 .pull-right {
 	float: right;
-	margin-top: 19px;
+	ma rgin-top: 19px;
 }
 .divider {
 	width: 100%;
@@ -73,6 +73,13 @@ font-family: 'IBM Plex Mono',monospace;
 	width: 100%;
 	height: 1px;
 	margin: 25px 0;
+	clear: both;
+}
+
+.breaker {
+	width: 100%;
+	height: 1px;
+	margin: 0;
 	clear: both;
 }
 
@@ -174,8 +181,9 @@ clear: both
 .row {
 zoom: 1
 }
-/**************** TYPOGRAPHY ***************/		h1 {
-font-family: 'IBM Plex Serif',serif;
+/**************** TYPOGRAPHY ***************/
+h1 {
+font-family: 'IBM Plex Sans',serif;
 font-style: ita lic;
 font-size: 2.2em;
 line-height: 48px;
@@ -189,9 +197,9 @@ line-height: 36px;
 font-weight: 400;
 }
 h3 {
-font-family: 'IBM Plex Serif',sans-serif;
+font-family: 'IBM Plex Sans',sans-serif;
 font-size: 1.6em;
-line-he ight: 30px;
+line-height: 36px;
 font-weight: 700;
 margin-bottom: 1em;
 }
@@ -239,29 +247,29 @@ list-style: initial;
 
 
 /*
-ul { 
-   list-style-type: disc; 
-   list-style-position: inside; 
+ul {
+   list-style-type: disc;
+   list-style-position: inside;
 }
-ol { 
-   list-style-type: decimal; 
-   list-style-position: inside; 
+ol {
+   list-style-type: decimal;
+   list-style-position: inside;
 }
-ul ul, ol ul { 
-   list-style-type: circle; 
-   list-style-position: inside; 
-   margin-left: 15px; 
+ul ul, ol ul {
+   list-style-type: circle;
+   list-style-position: inside;
+   margin-left: 15px;
 }
-ol ol, ul ol { 
-   list-style-type: lower-latin; 
-   list-style-position: inside; 
-   margin-left: 15px; 
+ol ol, ul ol {
+   list-style-type: lower-latin;
+   list-style-position: inside;
+   margin-left: 15px;
 }
 */
 
 ul {
     list-style: disc outside none;
-    margin-left: 0; 
+    margin-left: 0;
     padding-left: 1em;
  }
 
@@ -269,7 +277,7 @@ li{
     padding-left: .4em;
 }
 
- 
+
 p.list{line-height: 1.6rem;}
 
 
@@ -327,6 +335,49 @@ font-size: 120%;
 	/* Safari */
 }
 
+
+
+.hilite{
+  position:relative;
+}.hilite:before{
+  content:"";
+  z-index:-1;
+  left:0em;
+  top:0em;
+  border-width:2px;
+  border-style:solid;
+  border-color:#FF3000;
+  position:absolute;
+  border-right-color:transparent;
+  width:100%;
+  height:1em;
+  transform:rotate(2deg);
+  opacity:0.5;
+  border-radius:0.25em;
+}.hilite:after{
+  content:"";
+  z-index:-1;
+  left:0em;
+  top:0em;
+  border-width:2px;
+  border-style:solid;
+  border-color:#FF3000;
+  border-left-color:transparent;
+  border-top-color:transparent;
+  position:absolute;
+  width:100%;
+  height:1em;
+  transform:rotate(-1deg);
+  opacity:0.5;
+  border-radius:0.25em;
+}
+
+
+
+
+
+
+
 .table {
 width: 100%;
 border-spacing: 0;
@@ -365,18 +416,22 @@ padding: 15px 45px;
 font-size: 1.1em
 }
 .button.primary {
-colo r: white;
+color: white;
 background: white;
 border: 2px solid #ff3300;
 font-family: 'IBM Plex Mono';
 font-weight: 500;
 bottom: 10px;
 position: absolute;
+color: #ff3300;
+
+text-transform: uppercase;
 }
 
 .button: hover {
 colo r: white;
 background: white;
+
 border: 22px solid #ff3300;
 font-family: 'IBM Plex Mono';
 font-weight: 500;
@@ -393,7 +448,7 @@ font-family: 'IBM Plex Mono';
 .button.primary small: hover {
 backgrzound-color: black;
 border: 2px solid #ff3300;
-    
+
     background: #ff3300;
 
 color: red;
@@ -404,7 +459,7 @@ color: red;
         background: #ff3300;
 
 
-} 
+}
 
 
 
@@ -424,7 +479,7 @@ color: #FFF;
 background: #4daf7c;
 }
 .button.success: hover {
-background: #48a474; 
+background: #48a474;
 	color: #000000;
 }
 .button.danger {
@@ -435,12 +490,12 @@ background: #e6623c
 background: #e4572e
 }
 
-/*fixie nav*/	 
+/*fixie nav*/
 .navbar {
-background: #FFF;
-padding: 10px;
+background: #f9c600;
+padd ing: 10px;
 margin-bottom: 10px;
-border-bottom: 2px #ff3300 solid;
+bor der-bottom: 2px #666 solid;
 height: 50px;
 }
 .navbar h4 {
@@ -449,7 +504,7 @@ font-weight: 200;
 }
 .navbar li {
 display: inline-block;
-padding: .3em 65px 0 0;
+padding: .7em 10px 0 0;
 }
 .navbar li: last-child {
 padding-right: 0;
@@ -461,9 +516,7 @@ right: 0;
 top: 0;
 }
 
- 
-
-/*tidy up*/	 		 
+/*tidy up*/
 .nav bar {
 overflow: hidden;
 background-color: #333;
@@ -492,6 +545,24 @@ text-decoration: underline !important;
 }
 
 
+h1 a{
+font-family: 'IBM Plex Serif',serif;
+font-size: 1em;
+line-height: 48px;
+font-weight: 700;
+}
+
+h1 a: hover{
+font-family: 'IBM Plex Serif',serif;
+font-style: ita lic;
+font-size: 1em;
+line-height: 48px;
+font-weight: 700;
+}
+
+
+
+
 .navbar a.active {
 background-color: #4CAF50;
 color: pink;
@@ -500,7 +571,7 @@ text-decoration: underline;
 .navbar .icon {
 display: none;
 }
- /*footer*/	
+ /*footer*/
 
 .footer {
 background:#333333;
@@ -596,16 +667,143 @@ border: 1px #f7cfc4 solid;
 
 
 
+.imithe {
+-webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.anseo {
+-webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  visibility: hidden;
+}
+
+aside {
+display: block;
+z-index: -1;
+}
+
+#splash{
+top: 2px;
+position: fixed;
+margin-left: auto;
+margin-right: auto;
+width: 100%;
+}
+
+.delay {
+	transition-delay: 2s !important;
+}
+
+.hidden {
+	display: none;
+    transition-delay: 2s !important;
+}
+
+.breadcrumb{
+		-webkit-box-shadow: 0px 6px 20px -14px rgba(166,166,166,0.9);
+		-moz-box-shadow: 0px 6px 20px -14px rgba(166,166,166,0.9);
+		box-shadow: 0px 6px 20px -14px rgba(166,166,166,0.9);
+		height: 30px;
+		width: auto;
+		bac kground-color: aliceblue;
+		padding: 4px 0;
+		bo rder: 1px solid green;
+		margin-top: 10px;
+    }
+
+					#navig p{font-size 1em;}
+					#navig a{font-size 1em;}
+					#navig a:hover{text-decoration: underline;}
+
+
+#navig{
+	width: 1000px;
+	margin: 0 auto;
+	bo rder: thin solid #ff6600;
+	backgr ound-color: #ffebf2;
+	padding: 0 30px 0 30px;
+}
+
+					a.logo {
+					  text-decoration: none;
+					  color: black;
+					  font-weight: 600;
+					  font-size: 24px;
+					  bord er: 2px solid green;
+						margin-left: -50px;
+					}
+					img.logo {
+					  vertical-align: middle;
+					  width: 50px;
+					  margin-right: 135px;
+					  bord er: thin solid red;
+					  position: absolute;
+					}
+					span{
+					    position: relative;
+					    left: 50px;
+					    width: 700px;
+					    top: 10px;
+					    }
+
+
+
+					      .light{
+					        background:#CCC;'
+					        color:#333;
+					      }
+					      .dark{
+					        background:#333;
+					        color:#CCC;
+					      }
+					      .grid{
+					        text-align:center;
+					        font-size:10px;
+					      }
+					      .banner{
+					        text-align:center;
+					        padding:10px 0;
+					      }
+					      .table{
+					        margin-bottom:35px;
+					      }
+					      .banner button{
+					        margin-top:7px;
+					      }
+
+					      .explainer{
+					        font-weight:200;
+					        color:#AAA;
+					        margin-bottom:10px;
+					      }
+					      button{
+					      	margin-bottom:10px;
+					      }
+
 
 
 
 
 a {
-	font-size: 1em;
+	font-s ize: 1em;
 	text-decoration: none;
-	color: #ff3300;
-	font-family: 'IBM Plex Mono',sans-serif;
-		font-weight: 500;
+	color: #333333;
+	bord er: thin so lid blue;
+	font-family: 'IBM Plex Sans',sans-serif;
+		font-weight: 400;
 }
 .container a {
 	color: #000000;
@@ -616,6 +814,7 @@ a: hover {
 }
 
 
+#navig a{font-size: 1em;}
 
 
 
@@ -644,6 +843,12 @@ a: hover {
 }
 /***portrait mode***/
 
+
+
+
+
+
+
 /***handheld mode***/
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 .container {
@@ -656,6 +861,8 @@ display: table;
 	bor der: thin solid #8B9BB9;
 	width: 100%;
 	margin,padding: 0;
+	border: thin solid #8B9BB9;
+
 }
 	.nine {
 	bord er: thin solid #8B9BB9;
@@ -681,7 +888,7 @@ border: 1px #CCC solid;
 }
 .navbar li: last-child {
 	padding-right: 0;
-	border: 1px #CCC solid;
+	bor der: 1px #CCC solid;
 }
 .navbar.fixed {
 	position: relative;
@@ -754,8 +961,3 @@ border: 1px #CCC solid;
 .navbar li a:hover{
 text-decoration: underline;
 }
-
-
-
-
-
