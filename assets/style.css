@@ -32,6 +32,15 @@ font-family: 'IBM Plex Mono',monospace;
 	font-style: normal;
 }
 
+
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 .container {
 	width: 1000px;
 	margin: 0 auto;
@@ -39,6 +48,8 @@ font-family: 'IBM Plex Mono',monospace;
 	background-color: #ffffff;
 
 	padding: 0 30px 0 30px;
+
+	  flex: 1 0 auto;
 
 }
 .pull-left {
@@ -418,12 +429,12 @@ font-size: 1.1em
 .button.primary {
 color: white;
 background: white;
-border: 2px solid #ff3300;
+border: 2px solid #f9c600;
 font-family: 'IBM Plex Mono';
 font-weight: 500;
 bottom: 10px;
 position: absolute;
-color: #ff3300;
+color: #f9c600;
 
 text-transform: uppercase;
 }
@@ -432,7 +443,7 @@ text-transform: uppercase;
 colo r: white;
 background: white;
 
-border: 22px solid #ff3300;
+border: 22px solid #f9c600;
 font-family: 'IBM Plex Mono';
 font-weight: 500;
 bottom: 10px;
@@ -447,16 +458,16 @@ font-family: 'IBM Plex Mono';
 }
 .button.primary small: hover {
 backgrzound-color: black;
-border: 2px solid #ff3300;
+border: 2px solid #f9c600;
 
-    background: #ff3300;
+    background: #f9c600;
 
 color: red;
 }
 .primary:hover, .secondary:hover {
   color: #FFFFFF;
 	bor der: 2px solid #333;
-        background: #ff3300;
+        background: #f9c600;
 
 
 }
@@ -574,12 +585,17 @@ display: none;
  /*footer*/
 
 .footer {
-background:#333333;
+background:#f9c600;
 padding: 10px;
 margin-top: 10px;
 height: 100px;
-color: aliceblue;
+
 list-style-type: none;
+
+
+  flex-shrink: 0;
+
+
 }
 .footer a {
 color: white !important;
@@ -601,7 +617,6 @@ text-decoration: underline !important;
 
 .footer a.active {
 background-color: #4CAF50;
-color: pink;
 text-decoration: underline;
 }
 
