@@ -74,9 +74,28 @@
 
 splash.img{
 	position: fixed;
-    max-width: 600px;
+    width:500px;
     width: 100%; /* for IE 6 */
 }
+
+.liosta_img a { 
+	position:relative; 
+	    width:500px;
+
+    }
+    
+.liosta_img a span { 
+	position:absolute; 
+	display:none; 
+	z-index:99; 
+    }
+    
+.liosta_img a:hover span { 
+	display:block; 
+	position: fixed;  
+	top: 50%;
+	left:50%;
+	}
 
 
 
@@ -148,15 +167,19 @@ splash.img{
 				<li>Jan van Krimpen On designing and devising type</li>
 				<li>a keepsake typeset by Frederick Warde</li>
 
-				<div class='break'></div>
-
-				<p2>(Graduates will recoil at the absence of some staples of this session, but the stack was getting quite high. And we still have the non-Latin intro to add.)</p2>
-
+				<div class='break'></div>				
 			</ul>
+
+				<li style="none" class="liosta_img">
+					     <a href="#">(Graduates will recoil at the absence of some staples of this session, but the stack was getting quite high. And we still have the non-Latin intro to add.)<span><img src="https://64.media.tumblr.com/bf55a19863601b7b03d73e6a18344c15/tumblr_ncsamouAmV1qcwgl3o1_1280.jpg" height="400" /></span></a>
+				</li>
+
 				
 		</div>
 
-				<div class='break'></div>
+
+					
+
 				<div class='break'></div>
 				<div class='break'></div>
 				<div class='break'></div>
