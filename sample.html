@@ -6,214 +6,158 @@
 <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans|IBM+Plex+Serif:400,700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans+Condensed:400,700|IBM+Plex+Sans:300,500,600,700|IBM+Plex+Serif:400,500,600,700&display=swap" rel="stylesheet">
 
-<title>Texts on Type : Dissertation Training</title>
-<meta name="description" content="Selected dissertations from the Reading University's MATD">
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<title>Texts on Type &emdash; Typeface design training and resources</title>
+<meta name="description" content="Texts on Type &emdash; Typeface design training and resources">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" href="assets/style.css">
-
-
-	  <style type='text/css'>
-      body{
-        margin-t op:60px;
-      }
-      .light{
-        background:#CCC;'
-        color:#333;
-      }
-      .dark{
-        background:#ffff00;
-        color:#333;
-      }
-      .grid{
-        text-align:center;
-        font-size:10px;
-      }
-      .banner{
-        text-align:center;
-        padding:10px 0;
-      }
-      .table{
-        margin-bottom:35px;
-      }
-      .banner button{
-        margin-top:7px;
-      }
-
-      .explainer{
-        font-weight:200;
-        color:#ff5500;
-        margin-bottom:10px;
-      }
-      button{
-      	margin-bottom:10px;
-      }
-
-
+<style type='text/css'>
 body {
-  margin: 0;
+ margin: 0;
 }
 #app {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 #toolbar {
-  display: flex;
-  align-items: center;
-  background-color: #f9c600;
-  color: #333333;
-  padding: 0.5em;
-  font-family: 'IBM Plex Sans',sans-serif;
-      font-weight: 400;
-
+    display: flex;
+    align-items: center;
+    background-color: #f9c600;
+    color: #333333;
+    padding: 0.5em;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
 }
 #toolbar button,
 #page-mode input {
-  color: #666;
-  background-color: transparent;
-  font: inherit;
-  border: 1px solid currentColor;
-  border-radius: 3px;
-  padding: 0.25em 0.5em;
+    color: #666;
+    background-color: transparent;
+    font: inherit;
+    border: 1px solid currentColor;
+    border-radius: 3px;
+    padding: 0.25em 0.5em;
 }
 #toolbar button:hover,
 #toolbar button:focus,
 #page-mode input:hover,
 #page-mode input:focus {
-  color: black;
+    color: black;
 }
 #page-mode {
-  display: flex;
-  align-items: center;
-  padding: 0.25em 0.5em;
+    display: flex;
+    align-items: center;
+    padding: 0.25em 0.5em;
 }
-
 #viewport-container {
-  flex: 1;
-  background: #eee;
-  overflow: auto;
+    flex: 1;
+    background: #eee;
+    overflow: auto;
 }
 #viewport {
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
-#viewport > div {
-  text-align: center;
-  max-width: 100%;
+#viewport>div {
+    text-align: center;
+    max-width: 100%;
 }
 #viewport canvas {
-  width: 100%;
-  box-shadow: 0 2px 5px gray;
+    width: 100%;
+    box-shadow: 0 2px 5px gray;
 }
-
-
-    </style>
-
-  </head>
-
-  <body>
-  	<div class='navbar fixed'>
-      <div id='navig'>
-          <h4 class='pull-left'>
-        <a class="logo" href="index.html"><img class="logo" src="/assets/img/texts_on_type_icon-20.svg"><span>Texts on Type</span></a>
-      </h4>
-      <ul class='pull-right'>
-        <li><a href='index.html'>Example essays</a></li>
-        <li><a href='training.html'>Dissertation training</a></li>
-        <li><a href='research.html'>Research directory</a></li>
-        <li><a href='resources.html'>Academic resources</a></li>
-          </ul>
-
-      <div class='breaker'></div>
-
-        <!--<div class='breadcrumb'>
-              <p><a href='essays.html'>Texts on Type</a>&emsp;&emsp;>&emsp;&emsp;<a href='essays.html'>Academic resources</a>&emsp;>&emsp;<a href='essays.html'>Type classifications</a></p>
-        </div>-->
-    </div>
-  </div><!--/navbar-->
-
-
-
-		<div class="container">
-					<div class='silencer'></div>
-
-					<div class='silencer'></div>
-
-        	<div class="span eight">
-				<h5>Why and how to draw
-a bold typeface to
-accompany a regular
-</h5>
-				<h4>Lewis McGuffie</h4>
-		</div>
-		<div class='silencer'></div>
-
-<div id="app">
-      <div role="toolbar" id="toolbar">
-        <div id="pager">
-          <button data-pager="prev">back page</button>
-          <button data-pager="next">next page</button>
+</style>
+</head>
+<body>
+    <div class='navbar fixed'>
+        <div id='navig'>
+            <h4 class='pull-left'>
+                <a class="logo" href="index.html"><img class="logo" src="/assets/img/texts_on_type_icon-20.svg"><span>Texts on Type</span></a>
+            </h4>
+            <ul class='pull-right'>
+                <li><a href='index.html'>Example essays</a></li>
+                <li><a href='training.html'>Dissertation training</a></li>
+                <li><a href='research.html'>Research directory</a></li>
+                <li><a href='resources.html'>Academic resources</a></li>
+            </ul>
+            <div class='breaker'></div>
+            <!--<div class='breadcrumb'>
+                <p><a href='essays.html'>Texts on Type</a>&emsp;&emsp;>&emsp;&emsp;<a href='essays.html'>Academic resources</a>&emsp;>&emsp;<a href='essays.html'>Type classifications</a></p>
+                </div>-->
         </div>
-        <div id="page-mode">
-          <label>Page Mode <input type="number" value="1" min="1"/></label>
-        </div>
-      </div>
-      <div id="viewport-container"><div role="main" id="viewport"></div></div>
     </div>
-    <script src="https://unpkg.com/pdfjs-dist@2.0.489/build/pdf.min.js"></script>
-    <script src="src/index.js"></script>
-    <script src="js/index.js"></script>
-
-    <script>
-      initPDFViewer("docs/MATD18-19McguffieLewis.pdf");
-    </script>
-
-
-<div class='divider'></div>
-</div><!--/container-->
-
+    <!--/navbar-->
+    <div class="container">
+        <div class='silencer'></div>
+        <div class='silencer'></div>
+        <div class="span eight">
+            <h5>Why and how to draw
+                a bold typeface to
+                accompany a regular
+            </h5>
+            <h4>Lewis McGuffie</h4>
+        </div>
+        <div class='silencer'></div>
+        <div id="app">
+            <div role="toolbar" id="toolbar">
+                <div id="pager">
+                    <button data-pager="prev">back page</button>
+                    <button data-pager="next">next page</button>
+                </div>
+                <div id="page-mode">
+                    <label>Page Mode <input type="number" value="1" min="1"/></label>
+                </div>
+            </div>
+            <div id="viewport-container">
+                <div role="main" id="viewport"></div>
+            </div>
+        </div>
+        <script src="https://unpkg.com/pdfjs-dist@2.0.489/build/pdf.min.js"></script>
+        <script src="src/index.js"></script>
+        <script src="js/index.js"></script>
+        <script>
+            initPDFViewer("docs/MATD18-19McguffieLewis.pdf");
+        </script>
+        <div class='divider'></div>
+    </div>
+    <!--/container-->
     <div class='footer'>
-            <!--<div class='container'>
-                <h1 class='pull-left'>Texts on Type</h1>
-                <ul class='pull-right'>
-                    <li><a href='resources.html'>Resources</a></li>
-                    <li><a href='training.html'>Training</a></li>
-                    <li><a href='#'>Authors</a></li>
-	            </ul>
+        <!--<div class='container'>
+            <h1 class='pull-left'>Texts on Type</h1>
+            <ul class='pull-right'>
+                <li><a href='resources.html'>Resources</a></li>
+                <li><a href='training.html'>Training</a></li>
+                <li><a href='#'>Authors</a></li>
+            </ul>
             </div>-->
-
-
-            <div class='container'>
-                <h1 class='pull-left'>Texts on Type</h1>
-                <p4 class='pull-left'>All texts &copy; respective authors 2000 – 2020.
-                    This site is kindly sponsored by Google Fonts. The typeface used on this site is IBM Plex.
-                </p4>
-            </div>
-
-
-            <!--
-        	<h1 class='pull-left'>Texts on Type</h1>
-			<div class='silencer'></div>
-
-            <div class="span five">
-                <p4 class='pull-left'>All texts © respective authors 2000 – 2020.
-                    This site is kindly sponsored by Google Fonts. The typeface used on this site is IBM Plex.
-                </p4>
-            </div>
-
-            <div class="span three">
-                <p4 class='pull-right'><li><a href='#'>Authors</a></li>
-                    <li><a href="index.html" class="transition"><div class="link">Resources</div></li></a>
-					<li><a href='#'>Social</a></li>
-                </p4>
-            </div>
-
--->
-
-
-    </div><!--/footer-->
-  </body>
+        <div class='container'>
+            <h1 class='pull-left'>Texts on Type</h1>
+            <p4 class='pull-left'>All texts &copy; respective authors 2000 – 2020.
+                This site is kindly sponsored by Google Fonts. The typeface used on this site is IBM Plex.
+            </p4>
+        </div>
+        <!--
+            <h1 class='pull-left'>Texts on Type</h1>
+            <div class='silencer'></div>
+            
+               <div class="span five">
+                   <p4 class='pull-left'>All texts © respective authors 2000 – 2020.
+                       This site is kindly sponsored by Google Fonts. The typeface used on this site is IBM Plex.
+                   </p4>
+               </div>
+            
+               <div class="span three">
+                   <p4 class='pull-right'><li><a href='#'>Authors</a></li>
+                       <li><a href="index.html" class="transition"><div class="link">Resources</div></li></a>
+            <li><a href='#'>Social</a></li>
+                   </p4>
+               </div>
+            
+            -->
+    </div>
+    <!--/footer-->
+</body>
 </html>
